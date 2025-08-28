@@ -211,7 +211,7 @@ namespace DankBDOLauncher
             // Execute button
             var executeButton = new Button
             {
-                Text = $"Execute {GetActionDisplayName(action)}",
+                Text = "==>",
                 Font = new Font("Segoe UI", 10, FontStyle.Bold),
                 ForeColor = Color.White,
                 BackColor = accentColor,
