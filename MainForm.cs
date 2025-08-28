@@ -14,7 +14,7 @@ namespace DankBDOLauncher
         private readonly Dictionary<string, string> actionDescriptions = new()
         {
             // Row 1
-            { "DankLauncher", "Complete system optimization and game launch" },  // Button 1
+            { "DankLauncher", "Uses only the steam bdo files to launch either the client version OR the steam version." },  // Button 1
             { "fks", "Modify the systems input acceptance rates" },             // Button 2
             { "dismsfc", "System maintenance and integrity check" },            // Button 3
             // Row 2
@@ -33,10 +33,10 @@ namespace DankBDOLauncher
             { "dismsfc", Color.FromArgb(255, 167, 38) },               // Button 3
             // Row 2
             { "Networkoptimizer", Color.FromArgb(78, 205, 196) },      // Button 4
-            { "Dankmouboard", Color.FromArgb(255, 107, 107) },         // Button 5
+            { "Dankmouboard", Color.FromArgb(78, 205, 196) },         // Button 5
             { "clientbdoandsteamlauncherin1", Color.FromArgb(78, 205, 196) },  // Button 6
             // Row 3
-            { "restartservices", Color.FromArgb(78, 205, 196) }        // Button 7
+            { "restartservices", Color.FromArgb(255, 167, 38) }        // Button 7
         };
 
         public MainForm()
