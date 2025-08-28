@@ -22,7 +22,7 @@ A **native Windows application** that provides a beautiful, professional interfa
 ## 🛠️ **How to Build and Run**
 
 ### **Option 1: Automatic Build (Recommended)**
-1. **Double-click `Build and Run.bat`**
+1. **Double-click `BaR.bat`**
 2. **Wait for build to complete**
 3. **Application launches automatically**
 
