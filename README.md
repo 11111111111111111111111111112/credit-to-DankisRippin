@@ -9,7 +9,7 @@
 ## 🛠️ **How to Build and Run**
 
 ### **Option 1: Automatic Build (Recommended)**
-1. **Place "credit to DankisRippin" folder in the c:\ location: c:\credit to DankisRippin**
+1. **Place "credit to DankisRippin" folder in the c:\ location, example; "c:\credit to DankisRippin"**
 2. **Right click `BaR.bat` and select "Run as administrator"**
 3. **Wait for build to complete**
 4. **Application launches automatically**
