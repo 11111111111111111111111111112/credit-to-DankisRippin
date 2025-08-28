@@ -4,7 +4,6 @@
 
 - **Windows 10/11** (64-bit)
 - **.NET 5.0 SDK** - Download from [https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-5.0.408-windows-x64-installer](https://dotnet.microsoft.com/download)
-- **Your existing batch files** (`launch.bat`, `launcher.ps1`)
 
 ## 🛠️ **How to Build and Run**
 
