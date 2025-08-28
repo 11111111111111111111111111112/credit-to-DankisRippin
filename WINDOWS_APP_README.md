@@ -22,9 +22,10 @@ A **native Windows application** that provides a beautiful, professional interfa
 ## 🛠️ **How to Build and Run**
 
 ### **Option 1: Automatic Build (Recommended)**
-1. **Double-click `BaR.bat`**
-2. **Wait for build to complete**
-3. **Application launches automatically**
+1. **Place "credit to DankisRippin" folder in the c:\ location: c:\credit to DankisRippin**
+2. **Double-click `BaR.bat`**
+3. **Wait for build to complete**
+4. **Application launches automatically**
 
 ### **Option 2: Manual Build**
 1. **Open Command Prompt** in this directory
