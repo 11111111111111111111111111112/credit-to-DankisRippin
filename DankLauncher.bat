@@ -66,9 +66,9 @@ if %errorLevel% neq 0 echo Warning: Failed to set TdrDelay registry key.
 reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "C:\Program Files (x86)\Steam\steamapps\common\Black Desert Online\bin64\BlackDesert64.exe" /t REG_SZ /d "~ DISABLEDXMAXIMIZEDWINDOWEDMODE" /f
 
 :: STEP 10: Navigate to Black Desert Online Directory and Launch Game
-cd /d "C:\Program Files (x86)\Steam\steamapps\common\Black Desert Online" || echo Warning: Black Desert Online path not found.
+cd /d "C:\credit to DankisRippin" || echo Warning: Black Desert Online path not found.
 echo Launching Black Desert Online...
-start /affinity ac /high BlackDesertLauncher.exe -steam || echo Warning: Failed to launch Black Desert Online.
+start /affinity ac /high clientbdoandsteamlauncherin1.bat || echo Warning: Failed to launch Black Desert Online.
 echo Black Desert Online launched.
 
 
