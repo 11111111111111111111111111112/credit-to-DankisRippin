@@ -11,3 +11,5 @@
 2. **Right click `BaR.bat` and select "Run as administrator"**
 3. **Wait for build to complete**
 4. **Application launches automatically**
+5. step 5 optional, you can navigate to "C:\credit to DankisRippin\bin\Release\net5.0-windows" and create a 
+   short cut for your desk top that does not reinstall the app every time you open it.
