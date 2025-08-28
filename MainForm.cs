@@ -18,7 +18,8 @@ namespace DankBDOLauncher
             { "dismsfc", "System maintenance and integrity check" },
             { "restartservices", "Restart essential Windows services" },
             { "Dankmouboard", "Mouse and keyboard optimization" },
-            { "clientbdoandsteamlauncherin1", "Registry Optimizations" }
+            { "clientbdoandsteamlauncherin1", "Registry Optimizations" },
+            { "fks", "Modify the systems input acceptance rates" }
         };
 
         private readonly Dictionary<string, Color> actionColors = new()
@@ -28,7 +29,8 @@ namespace DankBDOLauncher
             { "dismsfc", Color.FromArgb(255, 167, 38) },
             { "restartservices", Color.FromArgb(78, 205, 196) },
             { "Dankmouboard", Color.FromArgb(255, 107, 107) },
-            { "clientbdoandsteamlauncherin1", Color.FromArgb(78, 205, 196) }
+            { "clientbdoandsteamlauncherin1", Color.FromArgb(78, 205, 196) },
+            { "fks", Color.FromArgb(147, 112, 219) }
         };
 
         public MainForm()
@@ -301,6 +303,7 @@ namespace DankBDOLauncher
                 "restartservices" => "Service Manager",
                 "Dankmouboard" => "Input Latency Optimization",
                 "clientbdoandsteamlauncherin1" => "Registry Optimizations",
+                "fks" => "Filter Keys Setter",
                 _ => action
             };
         }
@@ -411,6 +414,7 @@ namespace DankBDOLauncher
                 "restartservices" => "restartservices.bat",
                 "Dankmouboard" => "Dankmouboard.bat",
                 "clientbdoandsteamlauncherin1" => "reg.bat",
+                "fks" => "fks.bat",
                 _ => $"{action}.bat"
             };
 
