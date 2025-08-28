@@ -15,12 +15,23 @@ where dotnet >nul 2>&1
 if %errorlevel% neq 0 (
     echo ERROR: .NET 5.0 SDK is not found in PATH!
     echo.
-    echo Please install .NET 5.0 SDK from: https://dotnet.microsoft.com/download
-    echo Choose the .NET 5.0 version.
+    echo Please install .NET 5.0 SDK to continue.
     echo.
-    echo After installing, you may need to restart your computer.
-    echo.
-    pause
+    
+    :: Show a message box asking to install .NET
+    setlocal EnableDelayedExpansion
+    set "msg=This application requires .NET 5.0 SDK. Would you like to download it now?"
+    set "title=.NET 5.0 SDK Required"
+    
+    powershell -command "$ws = New-Object -ComObject WScript.Shell; $result = $ws.Popup('!msg!', 0, '!title!', 4 + 32); exit $result"
+    set "response=%ErrorLevel%"
+    
+    if "!response!"=="6" (
+        echo Launching .NET 5.0.407 installer download page...
+        start "" "%~dp0install_dotnet.bat"
+    )
+    
+    endlocal
     exit /b 1
 )
 
@@ -28,9 +39,21 @@ dotnet --version >nul 2>&1
 if %errorlevel% neq 0 (
     echo ERROR: .NET 5.0 SDK is installed but not working properly!
     echo.
-    echo Please try restarting your computer or reinstalling .NET 5.0 SDK.
-    echo.
-    pause
+    
+    :: Show a message box asking to reinstall .NET
+    setlocal EnableDelayedExpansion
+    set "msg=.NET 5.0 SDK is not working properly. Would you like to reinstall it?"
+    set "title=.NET 5.0 SDK Error"
+    
+    powershell -command "$ws = New-Object -ComObject WScript.Shell; $result = $ws.Popup('!msg!', 0, '!title!', 4 + 32); exit $result"
+    set "response=%ErrorLevel%"
+    
+    if "!response!"=="6" (
+        echo Launching .NET 5.0.407 installer download page...
+        start "" "%~dp0install_dotnet.bat"
+    )
+    
+    endlocal
     exit /b 1
 )
 
