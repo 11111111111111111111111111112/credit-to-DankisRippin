@@ -1,0 +1,15 @@
+Your personal "Maximum number of rss queues" is the amount of physical cpu cores your cpu has -2. example amd7800x3d is 8core 16thread so 6 is the optimal amount of rss queues.
+
+Microsoft assumes your pc is some piece of shit relic from the past so the default setting options are so shitty that we have to add our own options.
+
+To find your network adapter registry files you'll need to know your adapter class guid, this can be found in the details tab clguid display option menu which is located in the adapter properties configure sub menu.
+
+Make sure you have "Computer" highlighted as your location, it will only display "computer" in the adress bar when you're there. Then using the "find" tool under the "edit" tab right above the adress bar search your adapters cluid.
+
+Every time you uninstall and reinstall your network adapter a new folder with a 3 digit name gets added to the adapters clguid, youll have to click through them all to make sure you find the right location, there's almost always only 
+1 location that youll be able to find the setting we are looking for, but to be safe if you find more than 1 location be sure to add the rss queue setting that you personally need to each "Maximum number of rss queues" location.
+
+When you've located the "Enum" folder located within "*NumRssQueues" folder right click and select "new" then "String Value" double check that your new option matches the existing options format, IT IS CASE SENSITIVE.
+My picture example displays extra options to help you understand and match the format. There are bandwidth AND latency penalties if you enter the incorrect value.
+
+Don't forget to go back to your adapter properties configure advanced tab settings and pick the new max rss queues setting that you've created.
