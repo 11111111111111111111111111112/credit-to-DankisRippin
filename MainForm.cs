@@ -18,7 +18,7 @@ namespace DankBDOLauncher
             { "dismsfc", "System maintenance and integrity check" },
             { "restartservices", "Restart essential Windows services" },
             { "Dankmouboard", "Mouse and keyboard optimization" },
-            { "clientbdoandsteamlauncherin1", "BDO and Steam launcher" }
+            { "clientbdoandsteamlauncherin1", "Registry Optimizations" }
         };
 
         private readonly Dictionary<string, Color> actionColors = new()
@@ -300,7 +300,7 @@ namespace DankBDOLauncher
                 "dismsfc" => "System Corruption Checker",
                 "restartservices" => "Service Manager",
                 "Dankmouboard" => "Input Latency Optimization",
-                "clientbdoandsteamlauncherin1" => "BDO & Steam Launcher",
+                "clientbdoandsteamlauncherin1" => "Registry Optimizations",
                 _ => action
             };
         }
@@ -410,7 +410,7 @@ namespace DankBDOLauncher
                 "dismsfc" => "dismsfc.bat",
                 "restartservices" => "restartservices.bat",
                 "Dankmouboard" => "Dankmouboard.bat",
-                "clientbdoandsteamlauncherin1" => "clientbdoandsteamlauncherin1.bat",
+                "clientbdoandsteamlauncherin1" => "reg.bat",
                 _ => $"{action}.bat"
             };
 
